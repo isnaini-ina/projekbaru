@@ -20,6 +20,6 @@ submit = st.button("submit")
 
 
 if submit:
-    st.info("Jadi,dinyakataan . ")
+    st.info("Jadi,dinyatakan . ")
 
 
