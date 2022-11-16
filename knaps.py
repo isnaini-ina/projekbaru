@@ -13,6 +13,8 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.datasets import make_classification
 from sklearn.svm import SVC
 
+st.write("=========================================================================")
+
 st.write(""" 
 # Cek data
 """)
