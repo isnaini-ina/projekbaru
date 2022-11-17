@@ -21,7 +21,7 @@ st.write("""
 
 st.write("=========================================================================")
 
-tab1, tab2, tab3, tab4 = st.tabs(["Import Data", "Preprocessing", "Modelling", "Evalutions"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Import Data", "Preprocessing", "Modelling", "Evalutions"])
 
 with tab1:
     st.write("Import Data")
@@ -32,6 +32,11 @@ with tab2:
     data.head()
 
     X = data.drop(columns=["risk_rating"])
+   
+with tab5:
+    st.write("Deskripsi Data")
+    data = pd.read_csv("https://raw.githubusercontent.com/Feb11F/dataset/main/credit_score.csv")
+    st.dataframe(data)
 
     X.head()
 
