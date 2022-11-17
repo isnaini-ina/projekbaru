@@ -33,12 +33,6 @@ with tab2:
 
     X = data.drop(columns=["risk_rating"])
    
-with tab5:
-    st.write("Deskripsi Data")
-    data.head()
-
-    X = data.drop(columns=["Deskripsi Data"])
-   
     X.head()
 
     # Mengambil kolom Rata-rata overdue dan mentranformasi menggunakan one-hot encoding
